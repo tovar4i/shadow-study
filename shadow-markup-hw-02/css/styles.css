@@ -138,7 +138,7 @@ body {
 .work-caption {
   color: var(--dark);
   font-size: 36px;
-  line-height: 1, 11;
+  line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
 }
@@ -157,7 +157,7 @@ body {
 .team-caption {
   color: var(--dark);
   font-size: 36px;
-  line-height: 1, 11;
+  line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
 }
