@@ -48,6 +48,7 @@ body {
   text-decoration: none;
   text-transform: capitalize;
   font-weight: 500;
+  color: var(--dark);
 }
 
 .navigation-link:visited {
@@ -205,6 +206,64 @@ body {
 
 .footer-slogan {
   color: var(--light);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.filter-list {
+  list-style: none;
+}
+.button-filter {
+  background-color: var(--accent);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  cursor: pointer;
+  height: 48px;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  background-color: var(--pressed-state);
+  color: var(--white);
+}
+
+.products {
+
+}
+.products-list {
+  list-style: none;
+}
+.products-item {
+}
+.products-item-link {
+  color: var(--dark);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.products-item-link:visited {
+  color: inherit;
+}
+.products-item-link:hover,
+.products-item-link:focus {
+  color: var(--pressed-state);
+}
+
+.products-item-image {
+}
+.products-item-caption {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.products-item-desc {
+  color: var(--text);
   font-size: 16px;
   line-height: 1.5;
 }
