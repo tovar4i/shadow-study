@@ -1,0 +1,47 @@
+:root {
+    /* for dark theme */
+    --background-dark: #121212;
+    --text-dark: #0ac846;
+    --caption-dark: #50cef8;
+
+    /* for light theme */
+    --background-light: #acacacea;
+    --text-light: #2e2e36;
+    --caption-light: #090976;
+}
+
+body {
+    font-family: 'Consolas', 'Courier New', monospace;
+    color: var(--text-dark);
+    background-color: var(--background-dark);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+    color: red;
+}
+
+.link:visited {
+    color: inherit;
+}
+
+
+
+.caption {
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: var(--caption-dark);
+}
