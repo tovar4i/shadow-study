@@ -24,20 +24,16 @@ body {
 }
 
 .link {
-    color: inherit;
+    color: var(--text-dark);
     text-decoration: none;
 }
+
+
 
 .link:hover,
 .link:focus {
     color: red;
 }
-
-.link:visited {
-    color: inherit;
-}
-
-
 
 .caption {
     font-weight: 600;
