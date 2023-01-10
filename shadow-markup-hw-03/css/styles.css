@@ -24,8 +24,8 @@ p {
 ul {
   margin: 0;
   padding: 0;
+  border: 0;
 }
-
 
 .container {
   width: 1158px;
@@ -249,8 +249,8 @@ ul {
   margin: 0 15px;
 }
 
-.work-item {
-  display: block;
+.work-item img {
+  display: inline-block;
 }
 
 .work-item:not(:last-child) {
