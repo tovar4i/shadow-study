@@ -249,8 +249,9 @@ ul {
   margin: 0 15px;
 }
 
-.work-item img {
+.work-item {
   display: inline-block;
+  line-height: 0;
 }
 
 .work-item:not(:last-child) {
@@ -287,6 +288,17 @@ ul {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 
+  line-height: 0;
+}
+
+.team-item-img{
+  display: inline-block;
+}
+
+.team-item-text{
+  padding-top: 32px;
+  padding-bottom: 32px;
+
 }
 
 .team-person {
@@ -297,7 +309,6 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
 
-  padding-top: 32px;
   padding-bottom: 8px;
 }
 
@@ -306,8 +317,6 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-
-  padding-bottom: 32px;
 }
 
 .footer {
@@ -347,8 +356,18 @@ ul {
 
 /* portfolio page */
 
+.products{
+  padding-top: 96px;
+}
 .filter-list {
   background-color: var(--white);
+
+  display: flex;
+  justify-content: center;
+  padding-bottom: 72px;
+}
+.filter-item:not(:last-child) {
+  margin-right: 24px;
 }
 
 .button-filter {
@@ -366,9 +385,10 @@ ul {
   text-align: center;
 
   cursor: pointer;
-  /* 
+  
   border: 1px solid var(--light);
-  border-radius: 4px; */
+  border-radius: 4px;
+  padding: 12px 24px;
 }
 
 .button-filter:hover,
@@ -381,13 +401,16 @@ ul {
   background-color: var(--white);
 }
 
-.products-caption {}
-
 .products-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 }
 
-.products-item {}
+.products-item:not(:last-child) {
+  margin-right: 24px;
+}
 
 .products-item-link {
   color: var(--dark);
