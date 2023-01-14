@@ -218,6 +218,9 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
 
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 48px;
 }
 
@@ -245,7 +248,7 @@ img {
 
 
 
-/*---------- faetures */
+/*---------- features */
 .features {
   background-color: var(--white);
 }
@@ -334,8 +337,7 @@ img {
   display: flex;
   justify-content: space-between;
 
-  margin: 0 15px;
-
+  margin: 0 auto;
 }
 
 .team-item {
@@ -465,11 +467,10 @@ img {
 }
 
 .products-item {
-
-
   flex-basis: calc(100% /var(--products-columns) - var(--products-gap-horiz));
   margin-top: var(--products-gap-vert);
   margin-left: var(--products-gap-horiz);
+
 }
 
 .products-item-link {
@@ -492,6 +493,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.products-card {
+  border-bottom: 1px solid var(--accent);
+}
+
 
 .products-item-caption {
   font-weight: 500;
