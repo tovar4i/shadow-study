@@ -18,9 +18,10 @@
   /*CORNFLOWER */
   --light: #f4f4fd;
   /*CLOUD*/
-  --overlay: #2e2f42;
+  --overlay: rgba(46, 47, 66, 0.4);
   /*NAVY BLUE MODAL*/
-
+  --hero-background: rgba(46, 47, 66, 0.7);
+  /*GREY*/
 
   --white: #ffffff;
   --btn-standby: #747EEB;
@@ -64,7 +65,8 @@ img {
 
 .container {
   max-width: 1158px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -204,9 +206,17 @@ img {
 /*---------- hero */
 
 .hero {
-  background-color: var(--dark);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+
+
+  max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
+  margin: 0 auto;
+
 }
 
 .hero-caption {
@@ -221,10 +231,10 @@ img {
   max-width: 496px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
-.btn {
+.btn-main {
   font-family: 'Roboto', sans-serif;
   background-color: var(--primary-brand);
   color: var(--white);
@@ -241,11 +251,10 @@ img {
   margin: 0 auto;
 }
 
-.btn:hover,
-.btn:focus {
+.btn-main:hover,
+.btn-main:focus {
   background-color: var(--pressed-state);
 }
-
 
 
 /*---------- features */
