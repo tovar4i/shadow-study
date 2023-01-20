@@ -271,9 +271,24 @@ img {
   flex-basis: calc((100% - 3*24px)/4);
 }
 
-/* .features-item:not(:last-child) {
-  margin-right: 24px;
-} */
+.features-icon-container {
+  background-color: var(--light);
+
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 8px;
+}
+
+.features-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+
+}
 
 .features-item-caption {
   font-weight: 500;
