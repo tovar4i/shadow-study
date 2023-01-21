@@ -12,7 +12,7 @@
   /*GREEN */
   --text: #434455;
   /*SLATE */
-  --helper-text: #8e8f99;
+  --subtle-text: #8e8f99;
   /*LIGHT SLATE */
   --accent: #e7e9fc;
   /*CORNFLOWER */
@@ -89,6 +89,17 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.caption {
+  color: var(--dark);
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+
+  padding-bottom: 72px;
 }
 
 .header {
@@ -313,16 +324,6 @@ img {
   padding-top: 0;
 }
 
-.work-caption {
-  color: var(--dark);
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
-
-  padding-bottom: 72px;
-}
 
 .work-list {
   display: flex;
@@ -346,16 +347,6 @@ img {
   background-color: var(--light);
 }
 
-.team-caption {
-  color: var(--dark);
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
-
-  padding-bottom: 72px;
-}
 
 .team-list {
   display: flex;
@@ -377,9 +368,7 @@ img {
 }
 
 .team-item-text {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
+  padding: 32px 16px;
 }
 
 .team-person {
@@ -399,6 +388,89 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
 }
+
+.team-social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-social-item {
+  margin-top: 8px;
+}
+
+.team-social-link {
+  display: block;
+  background-color: var(--primary-brand);
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  padding: 12px;
+}
+
+.team-icon {
+  fill: var(--light);
+
+  width: 16px;
+  height: 16px;
+}
+
+/*-------------- clients section  */
+
+
+.clients>.container {
+  padding-top: 10px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-item {}
+
+/* .clients-list {
+  display: flex;
+  gap: 24px;
+}
+
+.clients-item {
+  flex-basis: calc((100% - 5*24px)/6);
+} */
+
+.clients-link {
+  display: block;
+
+  /* width: 168px;
+  height: 88px; */
+
+  border: 1px solid var(--subtle-text);
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+/* .clients-link {
+  display: block;
+
+  width: 168px;
+  height: 88px;
+
+  border: 1px solid var(--subtle-text);
+  border-radius: 4px;
+  padding: 16px 32px;
+} */
+
+.clients-logo {
+  fill: var(--subtle-text);
+
+  width: 104px;
+  height: 56px;
+}
+
+
+
+
 
 .footer {
   background-color: var(--dark);
