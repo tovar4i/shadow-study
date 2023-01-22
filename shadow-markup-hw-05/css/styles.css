@@ -662,6 +662,8 @@ img {
   position: relative;
 }
 
+
+
 .products-card::before {
   content: '';
   display: inline-block;
@@ -674,10 +676,26 @@ img {
   opacity: 0;
 }
 
+.products-subtext {
+  color: var(--light);
+  font-size: 16px;
+  line-height: 1.50;
+  letter-spacing: 0.02em;
+
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
 .products-card:hover::before {
   opacity: 1;
-
 }
+
+.products-card:hover .products-subtext {
+  opacity: 1;
+}
+
+
 
 .products-item-caption {
   font-weight: 500;
