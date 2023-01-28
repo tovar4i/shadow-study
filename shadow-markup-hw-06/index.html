@@ -336,7 +336,7 @@
       </div>
 
       <div class="footer-social-inner">
-        <p class="social-title">Social media</p>
+        <p class="footer-title">Social media</p>
         <ul class="footer-social-list list">
 
           <li class="footer-social-item">
@@ -368,16 +368,33 @@
               </svg>
             </a>
           </li>
-
         </ul>
       </div>
+
+      <div class="footer-subscribe-inner">
+        <label for="input-subscribe" class="footer-title">Subscribe</label>
+        <form action="#" class="subscribe-form">
+          <input type="email" name="subscribe email" id="input-subscribe" placeholder="E-mail">
+
+          <button type="button" class="subscribe-btn">
+            Subscribe
+            <svg class="subscribe-btn-logo" aria-label="subscribe">
+              <use href="./images/icons.svg#subscribe-btn"></use>
+            </svg>
+          </button>
+
+        </form>
+
+      </div>
+
+
 
     </div>
   </footer>
 
   <!-- is-hidden -->
 
-  <div class="overlay " data-modal>
+  <div class="overlay" data-modal>
     <div class="modal">
       <button class="modal-close-btn" type="button" data-modal-close>
         <svg class="modal-close-btn-icon">
@@ -385,38 +402,52 @@
         </svg>
       </button>
 
-      <p class="form-header">Leave your contacts and we will call you back</p>
-      <form class="form">
-        <div class="form-field">
+      <p class="main-form-header">Leave your contacts and we will call you back</p>
+      <form class="main-form">
+        <div class="main-form-field">
           <label for="client-name">Name</label>
-          <input type="text" name="name" id="client-name" autofocus />
+          <div class="form-input-inner">
+            <input type="text" name="name" id="client-name" autofocus />
+            <svg class="form-icon" aria-label="client name">
+              <use href="./images/icons.svg#form-name"></use>
+            </svg>
+          </div>
         </div>
 
 
-        <div class="form-field">
+        <div class="main-form-field">
           <label for="client-phone">Phone</label>
-          <input type="tel" name="phone" id="client-phone" />
+          <div class="form-input-inner">
+            <input type="tel" name="phone" id="client-phone" />
+            <svg class="form-icon" aria-label="client phone">
+              <use href="./images/icons.svg#form-phone"></use>
+            </svg>
+          </div>
         </div>
 
 
-        <div class="form-field">
+        <div class="main-form-field">
           <label for="client-email">Email</label>
-          <input type="email" name="email" id="client-email" />
+          <div class="form-input-inner">
+            <input type="email" name="email" id="client-email" />
+            <svg class="form-icon" aria-label="client email">
+              <use href="./images/icons.svg#form-email"></use>
+            </svg>
+          </div>
         </div>
 
-        <div class="comment-field">
+        <div class="main-form-field">
           <label for="client-comment">Comment</label>
-          <textarea name="comment" id="client-comment" cols="30" rows="10" placeholder="Text input"></textarea>
+          <textarea name="comment" id="client-comment" placeholder="Text input"></textarea>
         </div>
 
-        <div class="form-field">
-
+        <div class="main-form-field privacy">
           <input type="checkbox" name="privacy" value="" id="conditions">
-          <label for="conditions">I accept the terms and conditions of the
-            <a class="form-link" href="#">Privacy Policy</a></label>
+          <label for="conditions" class="label-conditions">I accept the terms and conditions of the
+            <a class="conditions-link" href="#">Privacy Policy</a></label>
         </div>
 
-        <button type="submit">Send</button>
+        <button type="submit" class="main-send-btn">Send</button>
       </form>
 
     </div>
