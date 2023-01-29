@@ -865,6 +865,7 @@ button {
 }
 
 #client-comment {
+  resize: none;
   width: 360px;
   height: 120px;
   padding-left: 16px;
@@ -895,30 +896,69 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   margin-top: 16px;
+  margin-bottom: 24px;
 }
 
-#conditions {
+.privacy .conditions {
+  width: 1px;
+  border: 0;
+  padding: 0;
+  margin: -1px;
+}
+
+.main-form-field .label-conditions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #757575;
+  margin-bottom: auto;
+}
+
+.pseudo-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 16px;
   height: 16px;
-  border: 1.25px solid #2E2F42;
-  border-radius: 2px;
   margin-right: 8px;
+
+  border: 1.25px solid var(--dark);
+  border-radius: 2px;
+  cursor: pointer;
+
+  fill: transparent;
+
+  transition: background-color var(--time) var(--trans-time-func),
+    border-color var(--time) var(--trans-time-func),
+    fill var(--time) var(--trans-time-func);
 }
 
-.privacy .label-conditions {
-  margin-bottom: auto;
-  width: 338px;
+.form-checkbox {
+  position: absolute;
+  display: inline-block;
 
-  font-weight: 400;
+  width: 10px;
+  height: 8px;
+}
+
+.conditions:checked+.pseudo-checkbox {
+  background-color: var(--pressed-state);
+  border-color: transparent;
+  fill: var(--light);
+}
+
+.conditions-link {
+  color: var(--primary-brand);
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
-  text-align: center;
-
-  color: #757575;
+  text-decoration-line: underline;
+  cursor: pointer;
 }
+
+
 
 
 .main-send-btn {

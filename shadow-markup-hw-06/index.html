@@ -442,9 +442,17 @@
         </div>
 
         <div class="main-form-field privacy">
-          <input type="checkbox" name="privacy" value="" id="conditions">
-          <label for="conditions" class="label-conditions">I accept the terms and conditions of the
-            <a class="conditions-link" href="#">Privacy Policy</a></label>
+          <label class="label-conditions">
+            <input type="checkbox" name="privacy" value="" class="conditions visually-hidden">
+            <span class="pseudo-checkbox">
+              <svg class="form-checkbox" aria-label="checkbox conditions">
+                <use href="./images/icons.svg#form-checkbox"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a class="conditions-link" href="#">&nbsp;Privacy Policy</a>
+
+          </label>
         </div>
 
         <button type="submit" class="main-send-btn">Send</button>
