@@ -839,7 +839,12 @@ button {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border-color var(--time) var(--trans-time-func);
+}
 
+.main-form-field input:focus {
+  outline: none;
+  border-color: var(--primary-brand);
 }
 
 .form-icon {
@@ -852,17 +857,28 @@ button {
   height: 24px;
 
   fill: var(--dark);
+  transition: fill var(--time) var(--trans-time-func);
 }
 
+.main-form-field input:focus+.form-icon {
+  fill: var(--primary-brand);
+}
 
 #client-comment {
   width: 360px;
   height: 120px;
   padding-left: 16px;
   padding-top: 8px;
+  border-radius: 4px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
+
+  transition: border-color var(--time) var(--trans-time-func);
+}
+
+#client-comment:focus {
+  outline: none;
+  border-color: var(--primary-brand);
 }
 
 #client-comment::placeholder {
@@ -873,6 +889,7 @@ button {
   letter-spacing: 0.04em;
 
 }
+
 
 .main-form-field.privacy {
   display: flex;
@@ -890,7 +907,8 @@ button {
   margin-right: 8px;
 }
 
-.label-conditions {
+.privacy .label-conditions {
+  margin-bottom: auto;
   width: 338px;
 
   font-weight: 400;
