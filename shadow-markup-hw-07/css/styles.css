@@ -1434,6 +1434,7 @@ button {
 
   .clients-item {
     flex-basis: calc((100% - 2*24px)/3);
+
   }
 
   .footer-wrapper {
@@ -1546,7 +1547,7 @@ button {
   }
 
   .products-item {
-    flex-basis: calc((100%-1*24px)/2);
+    flex-basis: calc((100% - 1*24px)/2);
   }
 
   .products-item:not(:last-child) {
