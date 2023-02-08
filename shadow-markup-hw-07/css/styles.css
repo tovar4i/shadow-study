@@ -1535,7 +1535,6 @@ button {
   .button-filter {
 
     padding: 8px 16px;
-
   }
 
   .products-list {
@@ -1554,8 +1553,260 @@ button {
     margin: 0;
   }
 
+}
+
+/*---------------- DESKTOP */
+
+@media screen and (min-width:1200px) {
+
+  .container {
+    width: 1158px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .hamburger-btn {
+    display: none;
+  }
+
+  .navigation {
+    width: auto;
+  }
+
+  .navigation-list {
+    display: flex;
+    margin-left: 76px;
+    margin-right: auto;
+  }
+
+  .navigation-link {
+    position: relative;
+
+    padding-top: 24px;
+    padding-bottom: 28px;
+  }
+
+  .navigation .current::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .contacts {
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .contacts-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contacts-item {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .contacts-link {
+    display: block;
+
+    color: var(--text);
+    font-style: normal;
+    text-decoration: none;
+    padding-top: 24px;
+
+  }
+
+  .contacts-item:not(:last-child) {
+    padding-right: 40px;
+  }
+
+  .navigation-link,
+  .contacts-link {
+    transition-property: color;
+    transition-duration: var(--time);
+    transition-timing-function: var(--trans-time-func);
+  }
+
+  .navigation-link:hover,
+  .navigation-link:focus,
+  .contacts-link:hover,
+  .contacts-link:focus {
+    color: var(--primary-brand);
+
+  }
+
+  .hero-caption {
+
+    margin-bottom: 48px;
+  }
+
+  .features-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .features-item {
+    flex-basis: calc((100% - 3*24px)/4);
+  }
+
+  .features-icon-container {
+    background-color: var(--light);
+
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+  }
+
+  .features-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+
+  }
+
+  .features-item-caption {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    text-align: start;
+
+    padding-bottom: 8px;
+  }
+
+  .features-item-desc {
+    font-weight: 400;
+
+  }
+
+  .work {
+    display: block;
+    background-color: var(--white);
+    padding-top: 0;
+  }
 
 
+  .work-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px;
+  }
+
+  .work-item {
+    display: inline-block;
+    line-height: 0;
+  }
+
+  .work-item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  .team-list {
+    flex-wrap: nowrap;
+    margin: 0 auto;
+
+    max-width: 100%;
+  }
+
+  .clients-list {
+    display: flex;
+    flex-wrap: nowrap;
+
+    gap: 24px;
+
+    margin: 0 auto;
+    max-width: 100%;
+
+  }
+
+  .clients-item {
+    flex-basis: calc((100% - 5*24px)/6);
+  }
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
+
+
+  }
+
+  .footer-logo-inner {
+    max-width: 264px;
+
+  }
+
+
+
+  .footer-logo>.logo-primary-brand {
+    color: var(--primary-brand);
+  }
+
+  .footer-slogan {
+    color: var(--accent);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    padding-top: 16px;
+  }
+
+  .footer-social-inner {
+    margin-left: 120px;
+
+    width: 208px;
+  }
+
+  .footer-social-link:hover,
+  .footer-social-link:focus {
+    background-color: var(--success);
+  }
+
+  .footer-subscribe-inner {
+    margin-left: 80px;
+    gap: 0;
+    /* max-width: 453px; */
+  }
+
+  .subscribe-form {
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+  }
+
+  /* --------desktop------- page portfolio */
+  .products-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+
+  .products-item {
+    flex-basis: calc((100% - 2*24px)/3);
+  }
 
 
 }
