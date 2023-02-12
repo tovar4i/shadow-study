@@ -44,6 +44,10 @@ body {
     color: var(--caption-dark);
 }
 
+.homeworks>p {
+    text-decoration: underline;
+}
+
 span {
     color: var(--white);
     animation: animate1 0.5s linear infinite;
