@@ -1,0 +1,16 @@
+@import 'base/variables';
+
+* {
+    font-family: 'Gilroy', sans-serif ;
+    // background: $main-fill-color;
+    color:#fff;
+}
+
+.container {
+    // position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+@import 'blocks/promo';
+@import 'blocks/header';

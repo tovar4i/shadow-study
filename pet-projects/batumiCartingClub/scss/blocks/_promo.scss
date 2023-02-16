@@ -1,0 +1,22 @@
+.promo {
+    min-height: 914px;
+    margin-top: -49px;
+    // padding: 112px 120px 38px 120px;
+    background: url('../img/main-bg vector.png') center (center/cover) no-repeat;
+    // position: absolute;
+    // z-index: 5;
+    &__title{
+        font-family: 'DotGothic16';
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 84px;
+        // margin-top: 527px;
+        text-align: center;
+        letter-spacing: -0.25em;
+
+        // color: #FFFFFF;
+
+    }
+}
+
+
