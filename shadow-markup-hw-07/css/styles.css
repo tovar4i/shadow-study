@@ -178,8 +178,8 @@ button {
   padding: 0;
   border: none;
   background-color: transparent;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 28px;
+  padding-bottom: 20px;
 
   transition-property: background-color, border-color;
   transition-duration: var(--time);
@@ -1140,6 +1140,7 @@ button {
 
 .products-item {
   flex-basis: calc(100%);
+  margin: 0 auto;
 }
 
 .products-item:not(:last-child) {
@@ -1287,7 +1288,8 @@ button {
 @media screen and (min-width:768px) {
   .container {
     width: 768px;
-    justify-content: space-between;
+    margin: 0 auto;
+    /* justify-content: space-between; */
   }
 
   .hamburger-btn {
@@ -1340,29 +1342,32 @@ button {
   .contacts {
     display: block;
     margin-left: auto;
-    margin-top: 24px;
-    margin-bottom: 10px;
   }
-
+  
   .contacts-list {
     display: flex;
     flex-direction: column;
   }
-
+  
   .contacts-item {
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
   }
-
+  
   .contacts-link {
     color: var(--text);
     font-style: normal;
     text-decoration: none;
   }
-
+  
   .contacts-item:not(:last-child) {
+    padding-top: 24px;
     padding-bottom: 4px;
+  }
+  .contacts-item:not(:last-child) {
+  
+    padding-bottom: 10px;
   }
 
   .navigation-link,
@@ -1554,6 +1559,7 @@ button {
     padding-top: 64px;
     padding-bottom: 96px;
   }
+
 
   .filter-list {
     display: flex;
