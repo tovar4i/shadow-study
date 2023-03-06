@@ -21,9 +21,12 @@ body {
     padding: 20px;
 }
 
-.list {
+ul{
     list-style: none;
+
 }
+
+
 
 .link {
     color: var(--text-dark);
@@ -31,8 +34,8 @@ body {
 
 }
 
+
 .list-js .link {
-    list-style: none;
     color: #e1ff39;
 }
 
