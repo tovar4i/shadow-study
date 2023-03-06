@@ -31,6 +31,10 @@ body {
 
 }
 
+.list-js .link {
+    list-style: none;
+    color: #e1ff39;
+}
 
 
 .link:hover,
