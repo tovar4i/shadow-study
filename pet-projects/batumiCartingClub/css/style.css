@@ -85,7 +85,9 @@
   /* background-position: top 112 left 0; */
 
   background: linear-gradient(180deg, #031923 0%, rgba(0, 0, 0, 0) 8.39%, rgba(0, 0, 0, 0) 57.87%, #031923 65.16%, #031923 100%), radial-gradient(50% 50% at 50% 50%, rgba(3, 25, 35, 0.1) 0%, rgba(3, 25, 35, 0.4) 100%),
-    url('../img/hero.jpg'), url('../img/background-vector/hero-blur-vector.svg'), url('../img/background-vector/hero-dots-vector.svg') center/cover no-repeat;
+    /* url('../img/background-vector/hero-blur-vector.svg'),
+    url('../img/background-vector/hero-dots-vector.svg'), */
+    url('../img/hero.jpg') center/cover no-repeat;
 
 }
 
@@ -105,8 +107,9 @@
   font-weight: 400;
   font-size: 58px;
   line-height: 1.448;
-
   letter-spacing: -0.25em;
+  text-align: center;
+
 }
 
 .hero-subtitle {
@@ -120,6 +123,7 @@
   line-height: 1.176;
 
   max-width: 634px;
+  text-align: center;
 }
 
 .hero-button {
@@ -145,3 +149,63 @@
 
 
 /* ----hero-------------------------- */
+
+
+/* ----carts-------------------------- */
+
+
+
+.carts-title {
+
+  font-family: var(--secondary-font);
+
+  font-weight: 400;
+  font-size: 144px;
+  line-height: 1.451;
+  text-transform: capitalize;
+
+  text-align: left;
+
+  color: var(--white);
+  opacity: 0.1;
+}
+
+.carts-subtitle span {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.167;
+
+
+  text-align: right;
+  letter-spacing: 0.25em;
+  text-transform: lowercase;
+  color: var(--white);
+  opacity: 0.7;
+}
+
+
+.carts-subtitle {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.556;
+  text-transform: capitalize;
+
+  text-align: right;
+  letter-spacing: -0.25em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----carts-------------------------- */
