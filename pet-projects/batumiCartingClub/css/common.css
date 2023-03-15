@@ -1,17 +1,59 @@
   body {
     font-family: var(--primary-font);
-    text-transform: uppercase;
-    color: var(--dark-color);
-    background-color: var(--light-color);
-    font-size: 14px;
+
+    color: var(--white);
+    background-color: var(--background);
+
+    font-size: 17px;
   }
 
-  .ital {
-    font-style: italic;
+  * {
+    padding: 0;
+    margin: 0;
+    border: 0;
   }
 
-  .no-scroll {
-    overflow: hidden;
+  *,
+  *:before,
+  *::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    color: currentColor;
+    text-decoration: none;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 
   .visually-hidden {
@@ -26,4 +68,3 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-

@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BatumiKartingClub</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BatumiKartingClub</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="./css/modern-normalize.css">
-  
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-
-<body>
-
-  <header>
-    <nav>
+  <body>
+    <header class="header">
       <div class="container">
-        <a href="#" class="header-logo">
-          <img src="img/nav-logo.svg" alt="logo">
-        </a>
+        <div class="logo">
+          <a href="#" class="logo-link">
+            <img src="./img/logo.png" alt="logo" width="194" />
+          </a>
+        </div>
 
-        <button class="burger">
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a class="menu-link" href="#">Цены/прокат</a>
+            </li>
 
-        </button>
+            <li class="menu-item"><a class="menu-link" href="#">Акции</a></li>
 
-        <ul class="menu">
-          <li class="menu-item"><a class="menu-link" href="#">Цены/прокат</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">Акции</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">Аренда</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">Трасса</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">Соревнования</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">Школа</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">Гоночная команда</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">Продажа картингов</a></li>
-        </ul>
+            <li class="menu-item"><a class="menu-link" href="#">Аренда</a></li>
+
+            <li class="menu-item"><a class="menu-link" href="#">Трасса</a></li>
+
+            <li class="menu-item">
+              <a class="menu-link" href="#">Соревнования</a>
+            </li>
+
+            <li class="menu-item"><a class="menu-link" href="#">Школа</a></li>
+
+            <li class="menu-item">
+              <a class="menu-link" href="#">Гоночная команда</a>
+            </li>
+
+            <li class="menu-item">
+              <a class="menu-link" href="#">Продажа картингов</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="burger"></button>
       </div>
-    </nav>
-  </header>
+    </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1 class="hero-title">Самый драйвовый картинг Грузии</h1>
-      <p class="hero-subtitle">В пространство скорости, где слово «адреналин» обретает особый смысл и ощущения от
-        быстрой езды сравнимы с американскими горками</p>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Самый драйвовый картинг Грузии</h1>
+          <p class="hero-subtitle">
+            В пространство скорости, где слово «адреналин» обретает особый смысл
+            и ощущения от быстрой езды сравнимы с американскими горками
+          </p>
 
-      <button class="main-button" type="button">Забронировать</button>
-
-    </div>
-
-  </section>
-
-
-
-
-</body>
-
+          <button class="hero-button button" type="button">
+            Забронировать
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
