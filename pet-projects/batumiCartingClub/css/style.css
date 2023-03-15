@@ -1,8 +1,13 @@
+@import url('./fonts.css');
 :root {
 
     /* colors */
     --primary: #00FFA3;
     --background: #031923;
+    
+    /* fonts */
+    --primary-font: 'Gilroy';
+    --secondary-font: 'DotGothic16';
 
 
 }
