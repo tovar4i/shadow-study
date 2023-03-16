@@ -7,6 +7,7 @@
   --primary: #00FFA3;
   --background: #031923;
   --white: #ffffff;
+  --border: #00D8A4 100 % #009470 100 %;
 
 
   /* fonts */
@@ -80,7 +81,7 @@
 
 /* ----header-------------------------- */
 
-/* ----hero-------------------------- */
+/*! ----hero-------------------------- */
 .hero {
   /* background-position: top 112 left 0; */
 
@@ -151,33 +152,63 @@
 /* ----hero-------------------------- */
 
 
-/* ----carts-------------------------- */
+/*!----carts-------------------------- */
 
+.carts {}
 
+.carts>.container {
+  position: relative;
+
+  background: url('../img/background-vector/carts-bg-vector.svg') center/cover no-repeat;
+
+}
 
 .carts-title {
 
-  font-family: var(--secondary-font);
+  text-align: left;
 
+}
+
+.section-title {
+
+  font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 144px;
   line-height: 1.451;
   text-transform: capitalize;
-
-  text-align: left;
-
   color: var(--white);
   opacity: 0.1;
 }
 
+
+.section-subtitle {
+
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.556;
+  text-transform: capitalize;
+  letter-spacing: -0.25em;
+}
+
+.carts-subtitle {
+  position: absolute;
+  right: 120px;
+  top: 61px;
+  text-align: right;
+}
+
 .carts-subtitle span {
+  text-align: right;
+
+}
+
+.section-subtitle span {
   font-family: var(--primary-font);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.167;
 
-
-  text-align: right;
   letter-spacing: 0.25em;
   text-transform: lowercase;
   color: var(--white);
@@ -185,27 +216,211 @@
 }
 
 
-.carts-subtitle {
-  font-family: var(--secondary-font);
-  font-weight: 400;
-  font-size: 58px;
-  line-height: 1.556;
-  text-transform: capitalize;
+/* ----carts-------------------------- */
 
+/*! ----booking-------------------------- */
+.booking>.container {
+  position: relative;
+  background: linear-gradient(180deg, #031923 0%, rgba(3, 25, 35, 0.561921) 20.89%, rgba(3, 25, 35, 0.561921) 77.66%, #031923 100%),
+    url('../img/booking-bg.jpg') center/cover no-repeat;
+
+  padding-bottom: 180px;
+
+}
+
+.booking-title {
   text-align: right;
-  letter-spacing: -0.25em;
+  margin-right: 7px;
+}
+
+.booking-subtitle {
+  position: absolute;
+  left: 120px;
+  top: 52px;
+}
+
+.booking-text {
+  max-width: 524px;
+
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.176;
+}
+
+.first {
+  padding-top: 33px;
+  padding-bottom: 23px;
+}
+
+.about-track {
+  display: flex;
+  margin-top: 31px;
+
+}
+
+.track-length,
+.track-time {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.176;
+
+  margin-right: 98px;
+}
+
+.mark-value {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.15;
+
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.btn-booking {
+  display: block;
+  margin: 0 auto;
+}
+
+/* ----booking-------------------------- */
+
+/* !----features-------------------------- */
+
+.features>.container {
+  position: relative;
+  padding-bottom: 64px;
+
+  background: url('../img/background-vector/features-bg-vector.svg') center/cover no-repeat;
+}
+
+.features-title {
+  text-align: left;
+  margin-bottom: 49px;
+}
+
+
+.features-subtitle {
+  position: absolute;
+  top: 50px;
+  right: 118px;
+}
+
+
+.features-list {
+
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 46px;
+  column-gap: 70px;
+  padding-bottom: 85px;
+}
+
+.features-item {
+  max-width: 513px;
+}
+
+.inner {
+  display: flex;
+
+  border: 2px solid #00D8A4;
+  box-shadow: 8px 8px 72px rgba(0, 2, 7, 0.1);
+  border-radius: 16px;
+  padding: 37px 37px 45px 37px;
+}
+
+.icon-inner {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 96px;
+  border: 2px solid #00D8A4;
+  filter: drop-shadow(6px 6px 17px rgba(3, 23, 32, 0.46));
+  border-radius: 20px 4px;
+}
+
+.features-icon {}
+
+.features-text-inner {
+  margin-left: 25px;
+  max-width: 315px;
+}
+
+.feature-item-title {
+  margin-bottom: 21px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.208;
+  color: var(--white);
+}
+
+.feature-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.143;
+  color: var(--white);
+
+  opacity: 0.5;
+}
+
+/* ---features-------------------------- */
+
+/* !----contacts-------------------------- */
+.contacts {
+  position: relative;
+  padding-bottom: 52px;
+}
+
+.contacts-title {
+  text-align: right;
+}
+
+.contacts-subtitle {
+  position: absolute;
+  left: 120px;
+  top: 77px;
+}
+
+.adress-block {
+  font-style: normal;
+
+}
+
+.adress-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.167;
+  color: var(--primary);
+}
+
+.adress-text {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.office-hours {
+  padding-bottom: 12px;
+}
+
+.contacts-link {
+  display: block;
+  margin-bottom: 12px;
+
+}
+
+.btn-call {
+  margin-top: 48px;
 }
 
 
 
+/* ----contacts-------------------------- */
+
+
+
+/*!----footer-------------------------- */
 
 
 
 
-
-
-
-
-
-
-/* ----carts-------------------------- */
+/* ----footer-------------------------- */
