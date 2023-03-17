@@ -77,8 +77,6 @@
   color: var(--primary);
 }
 
-
-
 /* ----header-------------------------- */
 
 /*! ----hero-------------------------- */
@@ -420,6 +418,57 @@
 
 /*!----footer-------------------------- */
 
+.footer>.container {
+
+}
+.footer-navigation {
+  display: flex;
+}
+.footer-logo {
+  margin-right: auto;
+}
+.footer-menu {
+  margin-left: auto;
+}
+.menu-list {
+}
+.menu-item {
+}
+.menu-link {
+}
+.footer-slogan {
+  margin-top: 10px;
+  margin-bottom: 27px;
+  max-width: 435px;
+
+  opacity: 0.6;
+}
+.footer-inner {
+  display: flex;
+  align-items: center;
+}
+.copyright {
+  margin-right: auto;
+  color: var(--primary);
+}
+.footer-social-list {
+  display: flex;
+  margin-left: auto;
+}
+.social-list-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.social-link{
+  
+  border-radius: 15px;
+}
+.social-icon-inner {
+}
+.social-icon {
+  border-radius: 18px;
+  fill:var(--primary);
+}
 
 
 
