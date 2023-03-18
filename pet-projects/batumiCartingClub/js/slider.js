@@ -1,11 +1,14 @@
-const slider = document.querySelector(".swiper-container");
-
-const swiper = new Swiper(slider, {
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
   slidesPerView: 3,
-  spaceBetween: 80,
-  // autoplay: {
-  //   delay: 2000,
-  // },
-  centeredSlides: true,
+  spaceBetween: 110,
   loop: true,
+
+  centeredSlides: 3,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
