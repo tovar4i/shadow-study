@@ -14,6 +14,10 @@
   --primary-font: 'Gilroy';
   --secondary-font: 'DotGothic16';
 
+  /*animation*/
+  --time: 250ms;
+  --trans-time-func: ease;
+
 }
 
 .container {
@@ -31,7 +35,7 @@
 .header {
   /* position: relative; */
 
-  top: 0;
+  /* top: 0; */
   width: 100%;
   height: 100%;
 
@@ -85,19 +89,18 @@
 /* ----header-------------------------- */
 
 /*! ----hero-------------------------- */
-.hero {
-  /* background-position: top 112 left 0; */
-
-  background: linear-gradient(180deg, #031923 0%, rgba(0, 0, 0, 0) 8.39%, rgba(0, 0, 0, 0) 57.87%, #031923 65.16%, #031923 100%), radial-gradient(50% 50% at 50% 50%, rgba(3, 25, 35, 0.1) 0%, rgba(3, 25, 35, 0.4) 100%),
-    /* url('../img/background-vector/hero-blur-vector.svg'),
-    url('../img/background-vector/hero-dots-vector.svg'), */
-    url('../img/hero.jpg') center/cover no-repeat;
-
-}
+.hero {}
 
 .hero>.container {
   padding-top: 112px;
   padding-bottom: 38px;
+  background:
+    url('../img/background-vector/hero-blur-vector.svg'),
+    url('../img/background-vector/hero-dots-vector.svg'),
+    linear-gradient(180deg, #031923 0%, rgba(0, 0, 0, 0) 8.39%, rgba(0, 0, 0, 0) 57.87%, #031923 65.16%, #031923 100%), radial-gradient(50% 50% at 50% 50%, rgba(3, 25, 35, 0.1) 0%, rgba(3, 25, 35, 0.4) 100%),
+    url('../img/hero.jpg') center/cover no-repeat;
+
+
 }
 
 .hero-title {
@@ -105,7 +108,7 @@
   margin-bottom: 20px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1233px;
+  max-width: 900px;
 
   font-family: var(--secondary-font);
   font-weight: 400;
@@ -149,8 +152,19 @@
   color: var(--white);
   text-align: center;
   align-items: center;
+
+  transition-property: background, border-radius;
+  transition-duration: var(--time);
+  transition-timing-function: var(--trans-time-func);
+
 }
 
+.button:active,
+.button:focus {
+  background: linear-gradient(180deg, #00d83d 0%, #009470 100%);
+  /* background: linear-gradient(180deg, #2fd778 0%, #128f6f 100%); */
+  border-radius: 4px 20px;
+}
 
 /* ----hero-------------------------- */
 
@@ -300,7 +314,9 @@
 /*! ----booking-------------------------- */
 .booking>.container {
   position: relative;
-  background: linear-gradient(180deg, #031923 0%, rgba(3, 25, 35, 0.561921) 20.89%, rgba(3, 25, 35, 0.561921) 77.66%, #031923 100%),
+  background:
+    url('../img/background-vector/booking-bg-blur.svg'),
+    linear-gradient(180deg, #031923 0%, rgba(3, 25, 35, 0.561921) 20.89%, rgba(3, 25, 35, 0.561921) 77.66%, #031923 100%),
     url('../img/booking-bg.jpg') center/cover no-repeat;
 
   padding-bottom: 180px;
@@ -387,14 +403,16 @@
 .features-list {
 
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   row-gap: 46px;
   column-gap: 70px;
   padding-bottom: 85px;
+
 }
 
 .features-item {
-  max-width: 513px;
+  width: 513px;
 }
 
 .inner {
@@ -452,6 +470,7 @@
 
 .contacts-title {
   text-align: right;
+  margin-bottom: 52px;
 }
 
 .contacts-subtitle {
@@ -499,7 +518,12 @@
 
 /*!----footer-------------------------- */
 
-.footer>.container {}
+.footer>.container {
+  background: linear-gradient(180deg, rgba(3, 25, 35, 0) 0%, rgba(4, 26, 36, 0.1) 100%),
+    url('../img/background-vector/footer-bg.svg') center/cover no-repeat;
+  filter: drop-shadow(-4px -4px 64px rgba(0, 130, 148, 0.1));
+
+}
 
 .footer-navigation {
   display: flex;
@@ -547,7 +571,7 @@
 }
 
 .social-link {
-
+  opacity: 0.7;
   border-radius: 15px;
 }
 
@@ -561,3 +585,66 @@
 
 
 /* ----footer-------------------------- */
+
+
+
+@media screen and (min-width:768px) {
+  .container {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .burger {
+    display: block;
+    margin-left: auto;
+  }
+
+
+
+
+  .hero-title {
+    font-size: 45px;
+  }
+
+  .section-title {
+    font-size: 100px;
+  }
+
+  .section-subtitle {
+    font-size: 50px;
+  }
+
+
+
+
+}
+
+
+
+@media screen and (min-width:1440px) {
+  .container {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
+  .hero-title {
+    font-size: 45px;
+  }
+
+  .section-title {
+    font-size: 100px;
+  }
+
+  .section-subtitle {
+    font-size: 50px;
+  }
+
+}
