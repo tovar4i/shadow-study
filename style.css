@@ -21,7 +21,7 @@ body {
     padding: 20px;
 }
 
-ul{
+ul {
     list-style: none;
 
 }
@@ -60,6 +60,10 @@ span {
     color: var(--white);
     animation: animate1 0.5s linear infinite;
     animation-delay: 0.3s;
+}
+
+pre {
+    color: var(--white);
 }
 
 @keyframes animate1 {
