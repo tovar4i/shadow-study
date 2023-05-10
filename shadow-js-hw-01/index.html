@@ -29,7 +29,9 @@
       const bmi = ;
       console.log(bmi); // 28.8
     </pre>
-    <button type="submit" class="button" run-example-6>Run Example 6</button>
+    <button type="submit" class="button" run-example-1-6>
+      Run Example 1-6
+    </button>
 
     <p class="caption">
       Example 9 - Значення за замовчуванням та оператор нульового злиття.
@@ -47,7 +49,9 @@
       const value = incomingValue || defaultValue;
       console.log(value);
     </pre>
-    <button type="submit" class="example-9" run-example-9>Run Example 9</button>
+    <button type="submit" class="button" run-example-1-9>
+      Run Example 1-9
+    </button>
 
     <p class="caption">Example 10 - Оператор % та методи рядків</p>
     <p>
@@ -66,8 +70,8 @@
       const doubleDigitMinutes = ;
       console.log(`${doubleDigitHours}:${doubleDigitMinutes}`);
     </pre>
-    <button type="submit" class="example-10" run-example-10>
-      Run Example 10
+    <button type="submit" class="button" run-example-1-10>
+      Run Example 1-10
     </button>
 
     <p><b> Модуль 1. Заняття 2. Розгалуження. Цикли</b></p>
@@ -80,9 +84,99 @@
       ECMAScript!"
     </p>
 
-    <button type="submit" class="example-1-2" run-example-1-2>
-      Run Example 1-2
+    <button type="submit" class="button" run-example-2-1>
+      Run Example 2-1
     </button>
+
+    <p class="caption">Example 2 - Відображення часу (if...else)</p>
+    <p>
+      Напиши скрипт для відображення годин та хвилин у консолі браузера у
+      вигляді рядка формату "14 г. 26 хв.". Якщо значення змінної minutes
+      дорівнює 0, то виводь рядок "14 г.", без хвилин."
+    </p>
+
+    <pre>
+      const hours = 14;
+      const minutes = 26;
+      let timestring;
+
+      console.log(timestring);
+    </pre>
+
+    <button type="submit" class="button" run-example-2-2>
+      Run Example 2-2
+    </button>
+
+    <p class="caption">Example 3 - Відображення часу (if...else)</p>
+    <p>
+      Напиши скрипт, який виводить у консоль рядок "Це позитивне число", якщо у
+      prompt користувач ввів число більше нуля. Якщо було введено нуль, виводь в
+      консоль рядок "Це нуль". Якщо передали від'ємне число, у консолі повинен
+      бути рядок "Це негативне число".
+    </p>
+
+    <pre>
+      const userInput = prompt('Введіть ціле число');
+    </pre>
+
+    <button type="submit" class="button" run-example-2-3>
+      Run Example 2-3
+    </button>
+
+    <p class="caption">Example 4 - Вкладені розгалуження</p>
+    <p>
+      Напиши скрипт, який порівнює числа у змінних a та b. Якщо обидва значення
+      більше 100, то виведи в консоль максимальне з них. В протилежному випадку
+      у консолі повинна бути сума значення b та числа 512.
+    </p>
+
+    <pre>
+      const a = 120;
+      const b = 180;
+    </pre>
+
+    <button type="submit" class="button" run-example-2-4>
+      Run Example 2-4
+    </button>
+
+    <p class="caption">Example 5 - Форматування посилання (endsWith)</p>
+    <p>
+      Напиши скрипт який перевіряє чи закінчується значення змінної link
+      символом /. Якщо ні, додай до кінця значення link цей символ. Використовуй
+      конструкцію if...else.
+    </p>
+
+    <pre>
+    let link = 'https://my-site.com/about';
+
+    console.log(link);
+    </pre>
+
+    <button type="submit" class="button" run-example-2-5>
+      Run Example 2-5
+    </button>
+
+    <p class="caption">
+      Example 6 - Форматування посилання (includes та логічне «І»)
+    </p>
+    <p>
+      Напиши скрипт який перевіряє чи закінчується значення змінної link
+      символом /. Якщо ні, додай до кінця значення link цей символ, але тільки в
+      тому випадку, якщо в link є підрядок "my-site". Використовуй конструкцію
+      if...else.
+    </p>
+
+    <pre>
+    let link = 'https://somesite.com/about';
+
+    console.log(link);
+    </pre>
+
+    <button type="submit" class="button" run-example-2-6>
+      Run Example 2-6
+    </button>
+
+    <footer></footer>
 
     <script src="./js/script.js"></script>
   </body>
