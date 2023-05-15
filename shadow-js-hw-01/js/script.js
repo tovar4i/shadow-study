@@ -110,6 +110,8 @@
   run.example_2_4.addEventListener("click", result_2_4);
 
   function result_2_4() {
+    console.log("run example 2-4 ...");
+
     const a = 10;
     const b = 10;
 
@@ -123,6 +125,8 @@
   run.example_2_5.addEventListener("click", result_2_5);
 
   function result_2_5() {
+    console.log("run example 2-5 ...");
+
     let link = "https://my-site.com/about";
 
     if (!link.endsWith("/")) {
@@ -135,12 +139,137 @@
   run.example_2_6.addEventListener("click", result_2_6);
 
   function result_2_6() {
-    let link = "https://my-site.com/about";
+    console.log("run example 2-6 ...");
 
-    if (!link.endsWith("/")) {
+    let link = "https://some-site.com/about";
+
+    if (link.includes('my-site') && !link.endsWith('/')) {
       link += "/";
     }
 
     console.log(link);
   }
+
+
+  run.example_2_7.addEventListener("click", result_2_7);
+
+  function result_2_7() {
+    console.log("run example 2-7 ...");
+
+    let link = "https://some-site.com/about";
+
+    (link.includes('my-site') && !link.endsWith('/'))? link += "/" : link;
+    
+
+    console.log(link);
+  }
+
+
+  run.example_2_8.addEventListener("click", result_2_8);
+
+  function result_2_8() {
+    console.log("run example 2-8 ...");
+
+    const hours = 25;
+
+    if(hours <17 ) {
+      console.log('Pending');
+    } else if (hours>24){
+      console.log('Overdue');
+    }else{
+      console.log('Expires');
+    }
+
+  }
+
+  run.example_2_9.addEventListener("click", result_2_9);
+
+  function result_2_9() {
+    console.log("run example 2-9 ...");
+
+    const daysUntilDeadline = 5;
+
+    if (daysUntilDeadline === 0) {
+      console.log('Сьогодні');
+    } else if (daysUntilDeadline === 1) {
+      console.log('Завтра');
+    } else if (daysUntilDeadline === 2) {
+      console.log('Післязавтра');
+    } else {
+      console.log('Дата у майбутньому');
+    }
+
+  }
+
+  run.example_2_10.addEventListener("click", result_2_10);
+
+  function result_2_10() {
+    console.log("run example 2-10 ...");
+
+    const daysUntilDeadline = 0;
+
+    switch (daysUntilDeadline) {
+      case 0: 
+      console.log('Сьогодні');
+      break;
+      case 1: 
+      console.log('Завтра');
+      break;
+      case 2: 
+      console.log('Післязавтра');
+      break;
+      
+      default: 
+      console.log('Дата у майбутньому');
+      break;
+    }
+
+  }
+
+
+  run.example_2_11.addEventListener("click", result_2_11);
+
+  function result_2_11() {
+    console.log("run example 2-11 ...");
+
+    const min = 20;
+    const max = 100;
+
+    for (let i = min; i <max; i++) {
+      if (i%5==0) {
+        console.log(i);
+      }
+      continue;
+    }
+
+  }
+
+  run.example_2_12.addEventListener("click", result_2_12);
+
+  function result_2_12() {
+    console.log("run example 2-12 ...");
+
+    const login = prompt ('Enter your login');
+
+    console.log(login);
+
+    if (login === 'admin'){
+      const password = prompt ('enter password');
+        if (password === 'adminpas'){
+          console.log('Здрастуйте, admin');
+        } else {
+          console.log("Невірний пароль");
+        }
+    } else if ( login == false || login == ""){
+      console.log('Скасовано');
+    } else {
+      console.log("Я вас не знаю");
+    }
+
+
+    }
+
+  
+
+
 })();
