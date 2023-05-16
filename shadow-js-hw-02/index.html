@@ -9,67 +9,24 @@
   </head>
   <body>
     <p class="caption">Homework JS-02</p>
-    <p><b>Модуль 2. Заняття 1. Розгалуження. Цикли</b></p>
+    <p><b>Модуль 2. Заняття 3. Масиви</b></p>
 
-    <p class="caption">Example 6 - Методи рядків та чейнінг</p>
+    <p class="caption">Example 1 - Базові операції з масивом</p>
     <p>
-      Напиши скрипт, який розраховує індекс маси тіла людини. Для цього
-      необхідно розділити вагу в кілограмах на квадрат висоти людини у метрах.
-      Вага та висота зберігаються у змінних weight та height, але не як числа, а
-      в вигляді рядків (спеціально для завдання). Не цілі числа можуть бути
-      задані у вигляді 24.7 або 24,7, тобто як роздільник дробової частини може
-      бути кома. Індекс маси тіла необхідно округлити до однієї цифри після
-      коми;
-    </p>
+      Створіть масив genres з елементами «Jazz» та «Blues».
+      Додайте «Рок-н-рол» до кінця.
+      Виведіть у консоль перший елемент масиву.
+      Виведіть у консоль останній елемент масиву. Код повинен працювати для масиву довільної довжини.
+      Видаліть перший елемент та виведіть його в консоль.
+      Вставте «Country» та «Reggae» на початок масиву.
+          </p>
 
     <pre>
-      let weight = '88,3';
-      let height = '1.75';
-
-      const bmi = ;
-      console.log(bmi); // 28.8
+      const genres = ;
     </pre>
-    <button type="submit" class="button" run-example-6>Run Example 6</button>
+    <button type="submit" class="button" run-example-3-1>Run Example 3-1</button>
 
-    <p class="caption">
-      Example 9 - Значення за замовчуванням та оператор нульового злиття.
-    </p>
-    <p>
-      Отрефактори код так, щоб у змінну value присвоювалося значення змінної
-      incomingValue, якщо воно не рівне undefined або null. В іншому випадку має
-      присвоюватися значення defaultValue. Перевір роботу скрипта для наступних
-      значень змінної incomingValue: null, undefined, 0, false. Використовуй
-      оператор ?? (nullish coalescing operator).
-    </p>
-    <pre>
-      const incomingValue = 5;
-      const defaultValue = 10;
-      const value = incomingValue || defaultValue;
-      console.log(value);
-    </pre>
-    <button type="submit" class="example-9" run-example-9>Run Example 9</button>
-
-    <p class="caption">Example 10 - Оператор % та методи рядків</p>
-    <p>
-      Напиши скрипт, який переведе значення totalMinutes (кількість хвилин) в
-      рядок у форматі годин та хвилин HH:MM.
-    </p>
-    <p>- 70 покаже 01:10</p>
-    <p>- 450 покаже 07:30</p>
-    <p>- 1441 покаже 24:01</p>
-    <pre>
-      const totalMinutes = 70;
-      const hours = ;
-      const minutes = ;
     
-      const doubleDigitHours = ;
-      const doubleDigitMinutes = ;
-      console.log(`${doubleDigitHours}:${doubleDigitMinutes}`);
-    </pre>
-    <button type="submit" class="example-10" run-example-10>
-      Run Example 10
-    </button>
-
     <script src="./js/script.js"></script>
   </body>
 </html>

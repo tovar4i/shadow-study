@@ -1,50 +1,33 @@
 (() => {
   const run = {
-    example_6: document.querySelector("[run-example-6]"),
-    example_9: document.querySelector("[run-example-9]"),
-    example_10: document.querySelector("[run-example-10]"),
+    example_3_1: document.querySelector("[run-example-3-1]"),
+    example_3_2: document.querySelector("[run-example-3-2]"),
+    example_3_3: document.querySelector("[run-example-3-3]"),
+    example_3_4: document.querySelector("[run-example-3-4]"),
+    example_3_5: document.querySelector("[run-example-3-5]"),
+    example_3_6: document.querySelector("[run-example-3-6]"),
+    example_3_7: document.querySelector("[run-example-3-7]"),
+    example_3_8: document.querySelector("[run-example-3-8]"),
+    
+
+    
   };
 
-  run.example_6.addEventListener("click", result_6);
-  run.example_9.addEventListener("click", result_9);
-  run.example_10.addEventListener("click", result_10);
+  run.example_3_1.addEventListener("click", result_3_1);
+  function result_3_1() {
+    console.log("run example 3-1 ...");
 
-  function result_6() {
-    console.log("run example 6 ...");
+    const genres = ['Jazz', 'Blues'] ;
 
-    let weight = "88.3";
-    let height = "1.75";
+    genres.push('Roc-n-roll');
+    console.log(genres[0]);
+    
+    console.log(genres[genres.length-1]);
 
-    weight = weight.replace(",", ".");
-    height = height.replace(",", ".");
+    
 
-    const bmi = (
-      parseFloat(weight) /
-      parseFloat(height) /
-      parseFloat(height)
-    ).toFixed(1);
-    console.log("bmi= ", bmi);
+
   }
 
-  function result_9() {
-    console.log("run example 9 ...");
 
-    const incomingValue = 0;
-    const defaultValue = 10;
-    const value = incomingValue ?? defaultValue;
-
-    console.log(value);
-  }
-
-  function result_10() {
-    console.log("run example 10 ...");
-
-    const totalMinutes = 1450;
-    const hours = Math.floor(totalMinutes / 60);
-    const minutes = totalMinutes % 60;
-
-    const doubleDigitHours = String(hours).padStart(2, 0);
-    const doubleDigitMinutes = String(minutes).padStart(2, 0);
-    console.log(`${doubleDigitHours}:${doubleDigitMinutes}`);
-  }
 })();
