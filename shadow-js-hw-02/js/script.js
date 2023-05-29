@@ -19,11 +19,15 @@
 
     const genres = ['Jazz', 'Blues'] ;
 
-    genres.push('Roc-n-roll');
+    genres.push('Rock-n-roll');
     console.log(genres[0]);
     
     console.log(genres[genres.length-1]);
-
+    
+    console.log('removed first element - ', genres.shift());
+    
+    genres.unshift('Country', 'Reggie');
+    console.log(genres);
     
 
 
